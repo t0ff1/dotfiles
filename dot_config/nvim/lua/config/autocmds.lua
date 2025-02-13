@@ -8,3 +8,21 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 		vim.highlight.on_yank()
 	end,
 })
+
+vim.api.nvim_create_autocmd("BufEnter", {
+	pattern = { "*.json" },
+	callback = function()
+		vim.opt.shiftwidth = 4
+		vim.opt.tabstop = 4
+		vim.opt.softtabstop = 4
+	end,
+})
+
+vim.api.nvim_create_autocmd("BufEnter", {
+	pattern = { "*.xml" },
+	callback = function()
+		vim.opt.shiftwidth = 4
+		vim.opt.tabstop = 4
+		vim.opt.softtabstop = 4
+	end,
+})

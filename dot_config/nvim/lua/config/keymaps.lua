@@ -16,8 +16,8 @@ map({ "x", "v", "i" }, "<C-h>", "<left>", { desc = "Left", silent = true, remap 
 map({ "x", "v", "i" }, "<C-l>", "<right>", { desc = "Right", silent = true, remap = true })
 
 nmap("<leader>w/", "<C-W>v", { desc = "Split Window Right", remap = true })
-map({ "n", "v" }, "gct", "O<Esc>Vcx<Esc><Cmd>normal gcc<CR>fxa<BS>TODO: ", { desc = "Add todo above", noremap = false })
-map({ "n", "v" }, "gcT", "o<Esc>Vcx<Esc><Cmd>normal gcc<CR>fxa<BS>TODO: ", { desc = "Add todo below", noremap = false })
+map({ "n", "v" }, "gct", "o<Esc>Vcx<Esc><Cmd>normal gcc<CR>fxa<BS>TODO: ", { desc = "Add todo below", noremap = false })
+map({ "n", "v" }, "gcT", "O<Esc>Vcx<Esc><Cmd>normal gcc<CR>fxa<BS>TODO: ", { desc = "Add todo above", noremap = false })
 
 nmap("<leader>bN", "<cmd>enew<CR>", { desc = "New Buffer" })
 nmap("<leader>b[", "<cmd>bNext<CR>", { desc = "Next Buffer" })

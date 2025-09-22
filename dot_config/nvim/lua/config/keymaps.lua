@@ -18,12 +18,24 @@ map({ "x", "v", "i" }, "<C-l>", "<right>", { desc = "Right", silent = true, rema
 nmap("<leader>w/", "<C-W>v", { desc = "Split Window Right", remap = true })
 map({ "n", "v" }, "gct", "o<Esc>Vcx<Esc><Cmd>normal gcc<CR>fxa<BS>TODO: ", { desc = "Add todo below", noremap = false })
 map({ "n", "v" }, "gcT", "O<Esc>Vcx<Esc><Cmd>normal gcc<CR>fxa<BS>TODO: ", { desc = "Add todo above", noremap = false })
+map(
+	{ "n", "v" },
+	"gcf",
+	"o<Esc>Vcx<Esc><Cmd>normal gcc<CR>fxa<BS>FIXME: ",
+	{ desc = "Add todo below", noremap = false }
+)
+map(
+	{ "n", "v" },
+	"gcF",
+	"O<Esc>Vcx<Esc><Cmd>normal gcc<CR>fxa<BS>FIXME: ",
+	{ desc = "Add todo above", noremap = false }
+)
 
 nmap("<leader>bN", "<cmd>enew<CR>", { desc = "New Buffer" })
 nmap("<leader>b[", "<cmd>bNext<CR>", { desc = "Next Buffer" })
 nmap("<leader>b]", "<cmd>bprevious<CR>", { desc = "Previous Buffer" })
-nmap("<C-]>", "<cmd>bprevious<CR>", { desc = "Next Buffer" })
-nmap("<C-[>", "<cmd>bNext<CR>", { desc = "Previous Buffer" })
+nmap("<C-]>", "<cmd>bprevious<CR>", { desc = "Previous Buffer" })
+nmap("<C-[>", "<cmd>bNext<CR>", { desc = "Next Buffer" })
 
 nmap("<leader><tab>n", "<cmd>tabnext<cr>", { desc = "Next Tab" })
 nmap("<leader><tab>p", "<cmd>tabprevious<cr>", { desc = "Previous Tab" })
@@ -44,6 +56,9 @@ end)
 map("n", "<F11>", function()
 	require("dap").step_out()
 end)
+
+-- Themery
+nmap("<leader>ut", "<cmd>Themery<CR>", { desc = "Open theme selection" })
 
 -- Disable arrow keys in normal mode
 nmap("<left>", '<cmd>echo "Use h to move!!"<CR>')

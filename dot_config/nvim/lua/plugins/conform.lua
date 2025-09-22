@@ -16,13 +16,17 @@ return {
 					"0",
 					"$FILENAME",
 				},
+				gofumpt = {
+					command = "gofumpt",
+					args = { "-w", "$FILENAME" },
+				},
 				stdin = false,
 			},
 		},
 		formatters_by_ft = {
 			xml = { "tidy" },
 			java = { "google-java-format" },
-			go = { "gofumpt -w" },
+			go = { "goimports", "gofumpt" },
 		},
 	},
 }

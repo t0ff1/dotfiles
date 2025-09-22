@@ -32,16 +32,6 @@ return {
 					{ "<C-k>", mode = { "i" }, false },
 				},
 			},
-			jsonls = {
-				settings = {
-					json = {
-						format = {
-							tabSize = 4,
-							shiftWidth = 4,
-						},
-					},
-				},
-			},
 		},
 	},
 }

@@ -1,0 +1,8 @@
+abbr -a -- gcl 'git clone'
+abbr -a -- gst 'git status'
+abbr -a -- gcm 'git commit -m '
+abbr -a -- gco 'git checkout -b '
+abbr -a -- gp 'git push '
+abbr -a -- gf 'git fetch '
+abbr -a -- gfa 'git fetch --all'
+abbr -a -- gcam 'git commit --all -m '

@@ -1,0 +1,25 @@
+# Which edge to show the tab bar on, top or bottom.
+tab_bar_edge bottom
+
+# Margin to the left and right of the tab bar in pts.
+tab_bar_margin_width 5.0
+
+# The tab bar style.
+tab_bar_style fade
+
+# The separator between tabs in the tab bar when using separator.
+tab_separator ""
+tab_fade 0
+
+# Template to render the tab title.
+# tab_title_template {fmt.fg._687d68}{fmt.bg.default}{fmt.fg._2a2d2a}{fmt.bg._687d68} {title} {fmt.fg._687d68}{fmt.bg.default}
+# active_tab_title_template {fmt.fg._a1b5a1}{fmt.bg.default}{fmt.fg._2a2d2a}{fmt.bg._a1b5a1} {title} {fmt.fg._a1b5a1}{fmt.bg.default}
+#: tab_title_template {fmt.fg._3e445e}{fmt.bg.default}  {title}  {fmt.fg._3e445e}{fmt.bg.default}
+
+# Tab bar colors and styles.
+active_tab_foreground #2a2d2a
+active_tab_background #687d68
+active_tab_font_style normal
+inactive_tab_foreground #a1b5a1
+inactive_tab_background #2a2d2a
+inactive_tab_font_style normal

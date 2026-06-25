@@ -9,3 +9,4 @@ abbr -a -- gcam 'git commit --all -m '
 abbr -a -- gl 'git pull'
 abbr -a -- gaa 'git add --all'
 abbr -a -- ga 'git add'
+abbr -a -- cls clear

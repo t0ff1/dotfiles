@@ -1,9 +1,0 @@
-# This file contains fish universal variable definitions.
-# VERSION: 3.0
-SETUVAR --export EDITOR:nvim
-SETUVAR --export GOBIN:/home/toffi/go/bin
-SETUVAR --export --path GOPATH:/home/toffi/go
-SETUVAR --export GOROOT:/home/toffi/\x2elocal/share/go
-SETUVAR __fish_initialized:4300
-SETUVAR _fisher_upgraded_to_4_4:\x1d
-SETUVAR fish_user_paths:/home/toffi/\x2elocal/share/go/bin\x1e/home/toffi/\x2elocal/share/nvim/mason/bin
